@@ -1,6 +1,5 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
     "windwp/nvim-ts-autotag",
@@ -42,8 +41,6 @@ return {
         "query",
         "vimdoc",
         "c",
-        "python",
-        "c++",
       },
       incremental_selection = {
         enable = true,
