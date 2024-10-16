@@ -1,5 +1,5 @@
 return {
-  "folke/tokyonight.nvim",
+  "craftzdog/solarized-osaka.nvim",
   priority = 1000,
   config = function()
     local transparent = true -- set to true if you would like to enable transparency
@@ -14,7 +14,7 @@ return {
     local fg_gutter = "#627E97"
     local border = "#547998"
 
-    require("tokyonight").setup({
+    require("solarized-osaka").setup({
       style = "night",
       transparent = transparent,
       styles = {
@@ -40,6 +40,6 @@ return {
       end,
     })
 
-    vim.cmd("colorscheme tokyonight")
+    vim.cmd("colorscheme solarized-osaka")
   end,
 }
